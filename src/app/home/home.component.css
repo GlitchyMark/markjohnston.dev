@@ -1,0 +1,118 @@
+body {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-bottom: 100px;
+}
+.topHead {
+    background: #f5f8fa;
+    margin: 53px 00px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(80, 80, 80);
+    border-bottom-width: 1px;
+    margin: auto;
+    padding-top: 30pt;
+    text-align: center;
+    color: rgb(26, 26, 26);
+    font-weight: 800;
+}
+.topHead h1{
+}
+.topHead #topText{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    color: white;
+    font-weight: 700;
+    text-shadow: black;
+    padding: 15pt 70pt 15pt 70pt;
+    width: 200pt;
+    border-radius: 200px; 
+    left: 50%;
+    transform: translate(-50%, -10%);
+    border: 2px solid black;
+    opacity: 0.9;
+}
+div {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.about h3{
+    position: relative;
+    display: inline-block;
+    width: 200pt;
+    align-items: center;
+    justify-content: center;
+}
+div object {
+    display: inline-block;
+    flex-direction: column;
+    vertical-align: top;
+    text-align: center;
+    align-items: center;
+    width: 250pt;
+    margin: auto;
+    background: #005baf;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background: rgb(170,170,170);
+    background: radial-gradient(circle, rgb(90, 90, 90) 0%, rgba(51,51,51,1) 100%);
+    background: transparent;
+}
+.plot img{
+    padding-bottom: 10px;
+}
+.plot h2{
+    font-weight: 800;
+    color: #2e6fac;
+}
+.plot h3{
+    color: black;
+    width: 200px;
+    margin: auto;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.button {
+    background-color: #2e6fac;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+.buttonuc {
+    background-color: #ac2e2e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+  }

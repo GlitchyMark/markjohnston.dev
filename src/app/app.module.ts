@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from '@angular/router';
@@ -10,6 +10,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { TileComponent } from './navigator/tile.component';
 import { InlineSVGModule } from 'ng-inline-svg';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,17 +32,20 @@ const appRoutes: Routes = [
     NavigatorComponent,
     ResumeComponent,
     HobbiesComponent,
-    TileComponent
+    TileComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
-    BrowserModule,
-    InlineSVGModule.forRoot()
+    RouterModule.forChild(appRoutes),
+    BrowserModule
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
 
+export class AppModule{ 
 
 }

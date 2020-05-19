@@ -8,47 +8,17 @@
     -moz-osx-font-smoothing: grayscale;
   }
   body {
-    position: absolute;
     content: "";
-    top: 50px;
-  }
-  .foot {
-    color: lightgray;
-    position: absolute;
-    background-image: url("assets/img/footer.jpg");
-    text-align: center;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    line-height: 10pt;
-  }
-  .foot img{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    fill: white;
-  }
-  a {
-    text-decoration: none;
-    color: lightgray;
-    outline: none;
+    padding-top: 50px;
+    flex: 1;
+    flex-wrap: wrap;
   }
 </style>
 
-<app-navigator></app-navigator>
 <body>
   <div>
-    <img src="assets/img/linkedin.svg" alt="My LinkedIn Profile" width=30 height=30> 
     <router-outlet></router-outlet>
+    <app-navigator></app-navigator>
   </div>
+  <app-footer></app-footer>
 </body>
-
-<footer class="foot"> 
-  <a href="https://www.linkedin.com/in/mark-johnston-a9b70117b/">
-    <img src="assets/img/linkedin.svg" alt="My LinkedIn Profile" width=30 height=30> <br/>
-  </a> 
-  <b>Contact me at: <a href="mailto:me@markjohnston.dev" class="lnk">me@markjohnston.dev</a>.</b>
-  <p>© Mark Johnston 2020</p>
-</footer>

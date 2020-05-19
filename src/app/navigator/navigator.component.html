@@ -1,4 +1,5 @@
 <div class="toolbar">
+  
   <p class="textheader">Mark Johnston</p>
     <div *ngFor="let page of pages.reverse()" class="toolnav">
       <nav>
@@ -7,11 +8,13 @@
         </a>
         <div *ngIf="page.dropdown != null" class="dropdown">
           <app-tile [Route]=page.route [Name]=page.name></app-tile>
-          <object *ngFor="let drops of page.dropdown" [routerLink]="drops.route" routerLinkActive="active"> 
-            <app-tile [Route]=drops.route [Name]=drops.name></app-tile>
+          <object *ngFor="let drops of page.dropdown" [routerLink]="drops.route" routerLinkActive="active" id="a"> 
+            <app-tile [Route]=drops.route [Name]=drops.name id="b"></app-tile>
           </object>
         </div>
       </nav>
+      
     </div>
     <!--<object class="seperator"></object>-->
   </div>
+  

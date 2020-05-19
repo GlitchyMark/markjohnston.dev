@@ -1,0 +1,31 @@
+  .foot {
+    color: rgb(134, 134, 134);
+    position: fixed;
+    background: #e2e6e7;
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    line-height: 10pt;
+    border-top-style: solid;
+    border-top-color: #ccc;
+    border-top-width: 1px;
+
+  flex: 1;
+  }
+  .foot img{
+    margin: 10pt 10pt;
+    margin-bottom: 0;
+    fill: white;
+  }
+  .foot a {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    color: lightgray;
+    outline: none;
+  }

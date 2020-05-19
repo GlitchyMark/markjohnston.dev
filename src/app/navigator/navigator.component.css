@@ -1,21 +1,22 @@
 .toolbar {
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   height: 53px;
-  margin: 0 0 10px 0;
-  display: block;
   align-items: center;
-  background-color: #333333;
-  color: white;
+  background-color: #fff;
   font-weight: 600;
   outline: none;
-  opacity: 0.8;
+  opacity: 1;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
 }
 .textheader {
-  position: fixed;
-  color: white;
+  position: absolute;
+  color: #000;
   padding-left: 40px;
   padding-top: 14px;
   top: 0;
@@ -28,19 +29,23 @@
 
 .dropdown object {
   display: block;
+  visibility: hidden;
   opacity: 0;
   transition-duration: 0.1s;
-  transform: scale(0);
+  color: #000;
+  max-height: 1px;
+  
 }
 
-.dropdown:hover > object{
+.dropdown:hover object{
+  display: block;
   visibility: visible;
   opacity: 1;
-  transform: scale(1);
+  max-height: 1000px;
 }
-.toolnav a:hover {
 
-  background-color: darkgray;
+.toolnav a:hover {
+  background-color: rgb(148, 144, 144);
   color: black;
 }
 .seperator {
