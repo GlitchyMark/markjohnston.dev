@@ -1,0 +1,22 @@
+body {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    padding-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+body div {
+    display: block;
+    text-align: left;
+
+    margin: auto;
+    width: 50%;
+}
+div p {
+    font-size: large;
+}

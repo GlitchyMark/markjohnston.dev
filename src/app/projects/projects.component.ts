@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TileComponent } from './tile.component';
+import {pages} from './projects';
 
 @Component({
   selector: 'app-projects',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-
+  pages = pages;
   constructor() { }
 
   ngOnInit(): void {

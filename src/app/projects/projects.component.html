@@ -1,2 +1,18 @@
-<p>Under Construction.</p>
 <!--<p>List github and starred projects here</p>-->
+<body>
+    <h1 class="header">Projects</h1>
+    <div class="mosaic-block" *ngFor="let page of pages">
+        <a class="fancybox" rel="group" href="{{page.link}}" style="text-decoration:none" class="mosaic-block">
+            <div class="mosaic-overlay">
+                <div class="details">
+                    <h4>{{page.name}}</h4>
+                    <p>{{page.description}}</p>
+                    <p id="year">{{page.year}}</p>
+                </div>
+            </div>
+            <div class="mosaic-backdrop">
+                <img src="{{page.image}}">
+            </div>
+        </a>
+    </div>
+</body>

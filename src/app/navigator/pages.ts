@@ -16,7 +16,7 @@ export const pages = [
         route: "projects"
     },
     {
-        dropdown: [new DropdownObject("Resume", "resume"), new DropdownObject("Hobbies", "hobbies")],
+        dropdown: [new DropdownObject("Resume", "resume"), new DropdownObject("Contact", "contact")],
         name: "About me",
         route: "about",
     }
